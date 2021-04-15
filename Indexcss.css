@@ -1,0 +1,143 @@
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    list-style: none;
+    margin: 0;
+    background: #000000;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+.navigation a:hover {
+    background: #ffffff;
+}
+
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .navigation {
+        flex-flow: column wrap;
+        padding: 100;
+    }
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255,0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+}
+
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+
+
+    /* Then we define the flow direction
+       and if we allow the items to wrap
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row;
+
+    /* Then we define how is distributed the remaining space */
+    justify-content: center;
+
+    padding: ;
+    margin: px;
+    list-style: none;
+}
+.container {
+    align-items: center;
+}
+
+.flex-item {
+    background: #c4c3c2;
+    padding: 20px;
+    width: 600px;
+    height: 600px;
+    margin-top: 0px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align:justify ;
+}
+
+
+
+.flex-container1 {
+    /* We first create a flex layout context */
+    display:flex;
+    flex-direction: column;
+    /* Then we define the flow direction
+       and if we allow the items to wrap
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: column;
+
+    /* Then we define how is distributed the remaining space */
+    justify-content: center;
+
+    padding: 20px;
+    margin: 0px;
+    list-style: none;
+}
+.container {
+    align-items: start;
+
+
+}
+
+.flex-item1 {
+    background-color: #c4c3c2;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding: 20px;
+    width: 200px;
+    margin-left: 80px;
+    margin-top: -695px;
+    color: #8800ff;
+    font-weight: bold;
+
+}
+
+.product {
+    display: flex;
+    margin: 0px;
+    padding: -300px;
+    margin-top: -450px;
+    margin-left: -150px;
+}
+.products {
+    align-items: ;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    width: 500px;
+}
+
+
+
+
+
+
+
+
